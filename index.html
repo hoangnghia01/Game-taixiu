@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@500&family=Montserrat&family=Roboto:wght@500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arimo:wght@700&family=Encode+Sans+Expanded:wght@700&family=Montserrat&family=Roboto:wght@500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arimo:wght@700&family=Comforter+Brush&family=Encode+Sans+Expanded:wght@700&family=Montserrat&family=Roboto:wght@500&display=swap" rel="stylesheet">    
+<title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            overflow: hidden;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .container{
+            position: relative;
+            background-image: url(hinh.jpeg);
+            background-size: 100%;
+        }
+        .container .banchoi table{
+            width: 100%;
+            height: 100vh;
+            border: 2px solid #000;
+            
+        }
+        .container .banchoi table tr{
+            width: 100%;
+            height: 84px;
+        }
+        .container .banchoi table tr td{
+            width: 151px;
+            /* height: 75px; */
+            text-align: center;
+            /* border: 2px solid red; */
+            
+        }
+        .container .banchoi table th{
+            height: 300px;
+            width: 300px;
+        }
+        .container .banchoi #tai,#xiu{
+            height: 400px;
+            width: 400px;
+        background: #fcbaba;
+        border: 1px solid #000;
+        font-size: 150px;
+        border-radius: 20px;
+        font-family: 'Comforter Brush', cursive;
+    }
+    .container .banchoi #trungthuong,#trung,#chan,#le {
+        width: 120px;
+        height: 60px;
+        border: 1px solid #000;
+        border-radius: 10px;
+        /* font-family: Arial, Helvetica, sans-serif; */
+        font-size: 23px;
+        font-family: 'Arimo', sans-serif;
+
+    }
+    .container .banchoi #trungthuong{
+        font-size: 35px;
+    }
+    .container .banchoi #trung{
+        font-size: 18px;
+    }
+    .container .banchoi #chan{
+        background: red;
+        color: #fff;
+        font-size: 25px;
+        border: none;
+        width: 130px;
+        height: 60px;
+    }
+    .container .banchoi #le{
+        background: #000;
+        color: #fff;
+        font-size: 25px;
+        border: none;
+        width: 130px;
+        height: 60px;
+    }
+    
+    .container .banchoi #play{
+        width: 100%;
+        height: 80px;
+        background: green;
+        border: none;
+        border-radius: 5px;
+        color: #FFF;
+        font-size: 40px;
+        font-family: 'Arimo', sans-serif;
+
+    }
+    .container .banchoi #replay button{
+        width: 90%;
+        height: 60px;
+        background: rgb(0, 0, 0);
+        border: none;
+        border-radius: 5px;
+        color: #FFF;
+        font-size: 20px;
+        font-family: 'Arimo', sans-serif;
+    }
+
+    
+        #datcuoc{
+            width: 500px;
+            height: 300px;
+            background:#e5e5e5;
+            color: #000;
+            text-align: center;
+            border: 1px solid #000;
+            border-radius: 5px;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, -110%);
+            transition: 1s;
+            overflow: hidden;
+            opacity: 0.5;
+            padding: 30px;
+        }
+        #datcuoc .a1{
+            width: 50px;
+            height: 50px;
+            background: none;
+            border: none;
+            position: absolute;
+            top: 0%;
+            right: 0;
+        }
+        #datcuoc table{
+            width: 100%;
+        }
+        #datcuoc table tr{
+            width: 100%;
+            height: 70px;
+        }
+
+        
+        #datcuoc .ntc{
+            width: 100%;
+            height: 67px;
+            padding: 10px 20px 10px 20px;
+            border-radius: 5px;
+            font-size: 15px;
+        }
+        #datcuoc td #ok{
+        width: 90%;
+        height:50px;
+        background: #FFF;
+        border-radius: 10px;
+        border: none;
+        background: rgb(123, 215, 77);
+        font-size: 15px;
+        color: #fff;
+    }
+    #datcuoc td .a2{
+        height:50px;
+        background: #FFF;
+        border-radius: 10px;
+        border: none;
+        width: 90%;
+        background: rgb(234, 50, 50);
+        font-size: 15px;
+        color: #fff;
+    }
+        #datcuoc .muccuoc{
+        width: 70px;
+        height: 30px;
+        border: none;
+        border-radius: 5px;
+    }
+.container #xucxac{
+    width: 450px;
+    height: 450px;
+    background-image: url(dia.png);
+    background-size: 100%;
+    position: absolute;
+    border-radius: 50%;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+.container #xucxac::before{
+    content: '';
+    width: 400px;
+    height: 400px;
+    background-image: url(bat.png);
+    
+    background-size: 100%;
+    position: absolute;
+    z-index: 5;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.container #xucxac input{
+    width: 50px;
+    height: 50px;
+}
+.container #xucxac #xx1{
+    position: absolute;
+    top: 35%;
+    left: 45%;
+    transform: translateX(-50%);
+    transform: rotate(45deg);
+    font-size: 20px;
+    color: #000;
+}
+.container #xucxac #xx2{
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: rotate(45deg);
+}
+.container #xucxac #xx3{
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: rotate(-45deg);
+}
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="banchoi">
+        <table>
+            <tr>
+                <th rowspan="6" colspan="4"><input type="button" id="xiu" value="Xỉu"></th>
+                    
+                <td><input type="button" id="trungthuong" value="666"></td>
+                    
+                <th rowspan="6" colspan="4"><input type="button" id="tai" value="Tài" style="color: red;"></th>
+                <tr>       
+                <td><input type="button" id="trungthuong" value="555"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" id="trungthuong" value="444" style="color: red;"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" id="trungthuong" value="333"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" id="trungthuong" value="222"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" id="trungthuong" value="111" style="color: red;"></td>
+                    </tr>
+            </tr>
+            <tr>
+                <td><input type="button" id="trung" value="4 (1=50)"></td>
+                <td><input type="button" id="trung" value="5 (1=18)"></td>
+                <td><input type="button" id="trung" value="6 (1=14)"></td>
+                <td><input type="button" id="trung" value="7 (1=12)"></td>
+                <!-- <td rowspan="2 "><input type="button" id="play" value="PLAY"></td> -->
+                <td rowspan="2 "><button id="play">Play</button></td> 
+                <td><input type="button" id="trung" value="8 (1=50)"></td>
+                <td><input type="button" id="trung" value="9 (1=18)"></td>
+                <td><input type="button" id="trung" value="10 (1=14)"></td>
+                <td><input type="button" id="chan" value="Chẵn"></td>
+            </tr>
+            <tr>
+                <td><input type="button" id="trung" value="17 (1=50)" style="color: red;"></td>
+                <td><input type="button" id="trung" value="16 (1=18)" style="color: red;"></td>
+                <td><input type="button" id="trung" value="15 (1=14)" style="color: red;"></td>
+                <td><input type="button" id="trung" value="14 (1=12)" style="color: red;"></td>
+                
+                <td><input type="button" id="trung" value="13 (1=50)" style="color: red;"></td>
+                <td><input type="button" id="trung" value="12 (1=18)" style="color: red;"></td>
+                <td><input type="button" id="trung" value="11 (1=14)" style="color: red;"></td>
+                <td><input type="button" id="le" value="Lẻ"></td>
+            </tr>
+            <tr>
+                <td colspan="4"><h1 id="ketqua">thong bao</h1></td>
+                <td id="replay"><button onclick="location.reload();">REPLAY</button></td>
+                <td colspan="4"><h1 id="tien">so du cua ban</h1></td>
+            </tr>
+        </table>
+    </div>
+    
+        <div id="datcuoc">
+            <h2>NHẬP TIỀN CƯỢC</h2>
+            <input type="button" value="X" id="cancel" class="a1"><br>
+            <input type="text" placeholder="Nhập tiền cược" class="ntc">
+            <table>
+                <tr>
+                    <td ><input type="button" value="100" class="muccuoc"></td>
+                    <td><input type="button" value="200" class="muccuoc"></td>
+                    <td><input type="button" value="500" class="muccuoc"></td>
+                    <td><input type="button" value="1.000" class="muccuoc"></td>
+                    <td><input type="button" value="5.000" class="muccuoc"></td>
+                    <td><input type="button" value="10.000" class="muccuoc"></td>
+                </tr>
+                <tr>
+                    <td colspan="3"><input type="button" value="OK" id="ok"></td>
+                    <td colspan="3"><input type="button" value="Cancel" id="cancel" class="a2"></td>
+                </tr>
+            </table>
+        
+    </div>
+        <div id="xucxac">
+            <table>
+                <tr>
+                    <td  id="xx1"><input type="button" value=""></td>
+                    <td  id="xx2"> <input type="button" value=""></td>
+                    <td  id="xx3"><input type="button" value=""></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script>
+
+        //hien cua so dat cuoc
+        let dat=document.querySelectorAll('.container .banchoi input');
+        let dong = document.querySelectorAll ('.container #datduoc input,#cancel')
+        let move = document.querySelector ("#datcuoc")
+        for(let i=0; i < dat.length;i++){
+        dat[i].addEventListener('click', datcuoc);
+        }
+        function datcuoc(){
+            move.style.transform = "translate(-50%, 100px)"
+            move.style.opacity=1;
+
+            
+        }
+
+        // dat cuoc goi y 
+        let muccuoc = document.querySelector(".container #datcuoc input[type='text']");
+        let muccuccmatdinh = document.querySelectorAll(".container #datcuoc .muccuoc");
+        for(let i=0; i < muccuccmatdinh.length;i++){
+        muccuccmatdinh[i].addEventListener('click', matdinh);
+        }
+        function matdinh(value) {
+        muccuoc.value += this.value;
+            }
+
+
+
+
+         //dong cua so dat cuoc
+         for(let i=0; i < dong.length;i++){
+        dong[i].addEventListener('click', dongcuaso)
+         }
+        function dongcuaso(){
+            move.style.transform = "translate(-50%, -110%)"
+            move.style.opacity=.5;
+            muccuoc.value = "";
+        }
+        window.onclick = function(event) {
+                if (event.target == move) {
+                move.style.transform = "translate(-50%, -110%)";
+                }
+            }
+        
+        //ok dat cuoc
+            let ok = document.querySelector("#ok")
+            ok.addEventListener('click' , oki)
+            function oki(){
+            move.style.transform = "translate(-50%, -110%)"
+            move.style.opacity=.5;
+
+            //gia tri tai do = gia tri nhap vao
+            
+
+            }
+
+
+
+        //hien xuc xac
+        let movedia = document.querySelector("#xucxac")
+        let mo_bat = document.querySelector('.container #xucxac::before')
+         let play = document.querySelector("#play")
+         play.addEventListener('click', hienxx)
+         function hienxx(){
+            movedia.style.transform = "translate(-50%,-50%)"
+
+
+            //mo bat
+            mo_bat.style.transform = "translate(-10%,-10%)"
+
+            //xuc xac
+            let xx1 = Math.floor (Math.random()*6)+1;
+            let xx2 = Math.floor (Math.random()*6)+1;
+            let xx3 = Math.floor (Math.random()*6)+1;
+
+            document.getElementById('xx1').innerHTML= '<input type="button" value="' + xx1 + '" >';
+            document.getElementById('xx2').innerHTML='<input type="button" value=" '+ xx2 +' " >';
+            document.getElementById('xx3').innerHTML='<input type="button" value=" '+ xx3 +' " >';
+
+         }
+         
+
+
+         
+
+
+    </script>
+</body>
+</html>
